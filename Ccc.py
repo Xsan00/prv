@@ -1316,7 +1316,7 @@ def konfirmasi():
 def konfirmasi1():
     try:
         lis = open('data/lisense.txt', 'r').read()
-        git = requests.get('https://github.com/HACKERIHSAN/lisense/blame/main/Id.txt').text.strip()
+        git = requests.get('empty').text.strip()
         if lis in git:
             os.system('clear')
             banner()
